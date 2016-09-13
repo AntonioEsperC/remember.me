@@ -8,6 +8,11 @@
             case 'pages':
                 $controller = new PagesController();
             break;
+
+            case 'posts':
+                require_once('../Models/post.php');
+                $controller = new PostsController();
+            break;
         }
 
         // call the action
@@ -17,7 +22,8 @@
     // just a list of the controllers we have and their actions
     // we consider those "allowed" values
 
-    $controllers = array('pages' => ['home', 'error']);
+    $controllers = array(   'pages' => ['home', 'error'],
+                            'posts' => ['index', 'show']);
     // check that the requested controller and action are both allowed
     // if someone tries to access something else he will be redirected to the error action of the pages controller
     if (array_key_exists($controller, $controllers)) {

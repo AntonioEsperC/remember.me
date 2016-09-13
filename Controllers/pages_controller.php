@@ -5,10 +5,10 @@
 			$last_name 	= 'Snow';
 			require_once('../Views/pages/home.php');
 		}
-	}
 
-	public function error(){
-		require_once('../Views/pages/error.php');
+		public function error(){
+			require_once('../Views/pages/error.php');
+		}
 	}
 
 ?>
