@@ -1,16 +1,24 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
-    <head></head>    
-    <body>
-        <header>
-            <a href="/rememberMe/public">Home</a>
-            <a href='?controller=posts&action=index'>Posts</a>
-        </header>
+  	<head></head>
+  	<body>
+		<header>
+			<?php
+			if (isset($_SESSION['facebook_access_token'])){ ?>
+				<a href='/rememberMe/public'>Home</a>
+		  		<a href='?controller=friends&action=index'>Show Friends</a>	
+		  		<a href='?controller=groups&action=index'>My Groups</a>
+				<a href='?controller=sessions&action=logout'>Logout</a>
+			<?php } 
+			else {
+				header('Location:login.php');
+			} ?>
+		</header>
 
-        <?php require_once('../config/routes.php')?>
+		<?php require_once('../config/routes.php'); ?>
 
-        <footer>
-            Copyright
-        </footer>
-    </body>
-</html>
+		<footer>
+				
+		</footer>
+  	<body>
+<html>
