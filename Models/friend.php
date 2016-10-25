@@ -22,8 +22,6 @@
             $list = [];
             $db = Db::getInstance();
             $req = $db->query('SELECT * FROM friends');
-
-            // we create a list of Friend objects from the database results
             foreach($req->fetchAll() as $friend) {
                 $list[] = new Friend($friend['id'], $friend['first_name'], $friend['last_name'], $friend['email'], $friend['phone'], $friend['profile_img']);
             }
@@ -32,10 +30,8 @@
 
         public static function find($id) {
             $db = Db::getInstance();
-            // we make sure $id is an integer
             $id = intval($id);
             $req = $db->prepare('SELECT * FROM friends WHERE id = :id');
-            // the query was prepared, now we replace :id with our actual $id value
             $req->execute(array('id' => $id));
             $friend = $req->fetch();
             return new Friend($friend['id'], $friend['first_name'], $friend['last_name'], $friend['email'], $friend['phone'], $friend['profile_img']);

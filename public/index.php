@@ -13,6 +13,6 @@
 
 	  	require_once('../Views/layout.php');
 	}else{
-		header('Location:login.php');
+		header('Location: login.php');
 	}
 ?>

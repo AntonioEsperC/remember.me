@@ -11,7 +11,7 @@
 				<a href='?controller=sessions&action=logout'>Logout</a>
 			<?php } 
 			else {
-				header('Location:login.php');
+				
 			} ?>
 		</header>
 

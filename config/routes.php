@@ -17,6 +17,7 @@
                 $controller = new SessionsController();
             break;
             case 'groups':
+                require_once('../Models/friend.php');
                 require_once('../Models/group.php');
                 $controller = new GroupsController();
             break;
@@ -28,9 +29,9 @@
     // just a list of the controllers we have and their actions
     // we consider those "allowed" values
     $controllers = array('pages' => ['home', 'error'],
-                       'friends' => ['index', 'show'],
-                      'sessions' => ['login', 'logout'],
-                        'groups' => ['index', 'show', 'delete', 'create']);
+        'friends' => ['index', 'show'],
+        'sessions' => ['login', 'logout'],
+        'groups' => ['index', 'show', 'delete', 'url_create', 'create', 'url_add_friend', 'add_friend', 'delete_group']);
 
     // check that the requested controller and action are both allowed
     // if someone tries to access something else he will be redirected to the error action of the pages controller
