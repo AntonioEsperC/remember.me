@@ -1,6 +1,5 @@
-<p>This is the requested friend:</p>
+<br>
+<h1>This is the requested friend:</h1>
 
-<p><?php echo $friend->first_name; ?></p>
-<p><?php echo $friend->last_name; ?></p>
-<p><?php echo $friend->email; ?></p>
-<p><?php echo $friend->phone; ?></p>
+<h3>Name: <?php echo $friend->first_name; ?> <?php echo $friend->last_name; ?></h3>
+<h5>More functionality (editing, adding email or phone) will be added for further versions of the application.</h5>

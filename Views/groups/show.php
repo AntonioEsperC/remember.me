@@ -1,12 +1,13 @@
-<br><a href="?controller=groups&action=url_add_friend&group_id=<?php echo $group->id; ?>">Add friend to this group</a>
-<a href="?controller=groups&action=delete_group&group_id=<?php echo $group->id; ?>">Delete group</a>
+<br>
+<h1>Here is the friend list of the group:</h1>
+<br><a class="add_group" href="?controller=groups&action=url_add_friend&group_id=<?php echo $group->id; ?>">Add Friend</a>
+<a class="add_group" href="?controller=groups&action=delete_group&group_id=<?php echo $group->id; ?>">Delete Group</a><br><br>
 
-<p>This is the information of the group:</p> 
+<h2>Name of the group: <?php echo $group->group_name; ?></h2>
 
-<p>Name: <?php echo $group->group_name; ?></p>
 
-<ul>
-	<?php foreach($friends as $friend) { ?>
-		<li>First name: <?php echo $friend[0]; ?>  Last name: <?php echo $friend[1]; ?></li>
-	<?php } ?>
-</ul>
+<?php foreach($friends as $friend) { ?>
+	<div class="col-md-4 col-lg-4 col-sm-4 group">
+		<p><?php echo $friend[0] .' '; echo $friend[1]; ?></p>
+	</div>
+<?php } ?>

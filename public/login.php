@@ -121,7 +121,7 @@
 				<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>				
 				<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-				<title>Login | Remember.me </title>
+				<title>Login | remember.me </title>
 			</head>
 			<body style="background-color: #ADD8E6;">
 				<div style="padding: 30px; border: 3px solid #3B5998; border-radius: 8px; background-color: #cce1e8; margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; height:375px; width: 350px; text-align: center;">
